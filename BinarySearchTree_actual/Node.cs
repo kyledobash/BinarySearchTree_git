@@ -10,14 +10,13 @@ namespace BinarySearchTree_actual
     {
         // member variables
         public int data;
-        Node leftChild;
-        Node rightChild;
+        public Node leftChild;
+        public Node rightChild;
 
         // constructor
-        public Node()
+        public Node(int data)
         {
-            rightChild = new Node();
-            leftChild = new Node();
+            this.data = data;
         }
 
         // member methods

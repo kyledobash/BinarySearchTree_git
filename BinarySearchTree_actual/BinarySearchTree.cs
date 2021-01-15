@@ -9,16 +9,26 @@ namespace BinarySearchTree_actual
     public class BinarySearchTree
     {
         // member variables
-        Node rootNode;
+        public Node rootNode;
         
         // constructor
         public BinarySearchTree(int data)
         {
-            rootNode = new Node();
-            rootNode.data = data;
+            rootNode = new Node(data);
         }
         // member methods
-        public void Add(Node nodeToBeAdded)
+        public void Add(Node parent, int newNodeData)
+        {
+            if (newNodeData > parent.data)
+            {
+                parent.rightChild = new Node(newNodeData);
+            }
+            else if (newNodeData < parent.data)
+            {
+                parent.leftChild = new Node(newNodeData);
+            }
+        }
+        public Node Search(int searchData)
         {
 
         }
