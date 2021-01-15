@@ -12,9 +12,10 @@ namespace BinarySearchTree_actual
         Node rootNode;
         
         // constructor
-        public BinarySearchTree()
+        public BinarySearchTree(int data)
         {
             rootNode = new Node();
+            rootNode.data = data;
         }
         // member methods
         public void Add(Node nodeToBeAdded)
