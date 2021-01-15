@@ -9,20 +9,17 @@ namespace BinarySearchTree_actual
     public class BinarySearchTree
     {
         // member variables
-        public List<Node> binarySearchTree;
-
+        Node rootNode;
+        
         // constructor
         public BinarySearchTree()
         {
-            binarySearchTree = new List<Node>();
+            rootNode = new Node();
         }
         // member methods
         public void Add(Node nodeToBeAdded)
         {
-            if (binarySearchTree.Count == 0)
-            {
 
-            }
         }
     }
 }
