@@ -21,16 +21,31 @@ namespace BinarySearchTree_actual
         {
             if (newNodeData > parent.data)
             {
-                parent.rightChild = new Node(newNodeData);
+                if (parent.rightChild == null)
+                {
+                    parent.rightChild = new Node(newNodeData);
+                }
+                else
+                {
+                    this.Add(parent.rightChild, newNodeData);
+                }
             }
             else if (newNodeData < parent.data)
             {
-                parent.leftChild = new Node(newNodeData);
+                if (parent.leftChild == null)
+                {
+                    parent.leftChild = new Node(newNodeData);
+                }
+                else
+                {
+                    this.Add(parent.leftChild, newNodeData);
+                }
             }
         }
-        public Node Search(int searchData)
-        {
 
-        }
+        //public Node Search(int searchData)
+        //{
+
+        //}
     }
 }
