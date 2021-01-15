@@ -6,17 +6,23 @@ using System.Threading.Tasks;
 
 namespace BinarySearchTree_actual
 {
-    class BinarySearchTree
+    public class BinarySearchTree
     {
         // member variables
-
+        public List<Node> binarySearchTree;
 
         // constructor
         public BinarySearchTree()
         {
-
+            binarySearchTree = new List<Node>();
         }
         // member methods
+        public void Add(Node nodeToBeAdded)
+        {
+            if (binarySearchTree.Count == 0)
+            {
 
+            }
+        }
     }
 }
