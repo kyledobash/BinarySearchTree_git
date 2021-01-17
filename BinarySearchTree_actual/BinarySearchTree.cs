@@ -45,15 +45,6 @@ namespace BinarySearchTree_actual
 
         public Node Search(Node parent, int searchData)
         {
-            //if parent.data == searchData
-                //return parent
-
-            //else if parent.data > searchData
-                //Search parent.rightchild, searchDAta
-
-            //else if parent.data < searchData
-                //Search parent.leftchild, searchDAta
-
             if (parent.data == searchData)
             {
                 return parent;
@@ -68,10 +59,10 @@ namespace BinarySearchTree_actual
                     }
                     else
                     {
-                        this.Search(parent.rightChild, searchData);
+                        return Search(parent.rightChild, searchData);
                     }
                 }
-                else if (searchData < parent.data)
+                else
                 {
                     if (parent.leftChild == null)
                     {
@@ -79,7 +70,7 @@ namespace BinarySearchTree_actual
                     }
                     else
                     {
-                        this.Search(parent.leftChild, searchData);
+                        return Search(parent.leftChild, searchData);                        
                     }
                 }
             }
