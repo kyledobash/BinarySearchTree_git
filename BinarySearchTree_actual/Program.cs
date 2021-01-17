@@ -16,8 +16,8 @@ namespace BinarySearchTree_actual
             test.Add(test.rootNode, 50);
             test.Add(test.rootNode, 20);
             test.Add(test.rootNode, 200);
-            test.Add(test.rootNode, 10);
-            Console.ReadLine();
+            test.Add(test.rootNode, 10);            
+            test.Search(test.rootNode, 10);
         }
     }
 }

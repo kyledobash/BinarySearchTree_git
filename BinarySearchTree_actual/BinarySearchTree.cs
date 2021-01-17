@@ -43,9 +43,46 @@ namespace BinarySearchTree_actual
             }
         }
 
-        //public Node Search(int searchData)
-        //{
+        public Node Search(Node parent, int searchData)
+        {
+            //if parent.data == searchData
+                //return parent
 
-        //}
+            //else if parent.data > searchData
+                //Search parent.rightchild, searchDAta
+
+            //else if parent.data < searchData
+                //Search parent.leftchild, searchDAta
+
+            if (parent.data == searchData)
+            {
+                return parent;
+            }
+            else
+            {
+                if (searchData >  parent.data)
+                {
+                    if (parent.rightChild == null)
+                    {
+                        return null;
+                    }
+                    else
+                    {
+                        this.Search(parent.rightChild, searchData);
+                    }
+                }
+                else if (searchData < parent.data)
+                {
+                    if (parent.leftChild == null)
+                    {
+                        return null;
+                    }
+                    else
+                    {
+                        this.Search(parent.leftChild, searchData);
+                    }
+                }
+            }
+        }
     }
 }
